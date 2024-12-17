@@ -4,3 +4,10 @@ interface ListCountriesResponseItem {
 }
 
 export type ListCountriesResponse = ListCountriesResponseItem[];
+
+interface ListCountriesDataItem {
+  name: string;
+  code: string;
+}
+
+export type ListCountriesData = ListCountriesDataItem[];

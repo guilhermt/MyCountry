@@ -52,7 +52,7 @@ export const getCountryController = async (req: Request, res: Response) => {
       })),
     };
 
-    res.json({ countryData });
+    res.json(countryData);
   } catch (e) {
     console.log("Error in the get country controller:", e);
     res.json({ status: 500, message: "Unexpected server error" });
