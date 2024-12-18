@@ -22,7 +22,7 @@ export default function App() {
   const resolver: CSSVariablesResolver = () => ({
     variables: {},
     light: {
-      '--mantine-color-body': '#f8f8f8',
+      '--mantine-color-body': '#f5f5f5',
     },
     dark: {},
   });

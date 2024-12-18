@@ -10,14 +10,14 @@ export const getCountryController = async (req: Request, res: Response) => {
     const alpha2CountryCode = req.params?.id;
 
     if (!alpha2CountryCode) {
-      res.json({ status: 400, message: "Country Id is required" });
+      res.status(400).json({ message: "Country Id is required" });
       return;
     }
 
     const alpha3CountryCode = getAlpha3CountryCode(alpha2CountryCode);
 
     if (!alpha3CountryCode) {
-      res.json({ status: 400, message: "Invalid Country Id" });
+      res.status(400).json({ message: "Invalid Country Id" });
       return;
     }
 
@@ -36,7 +36,7 @@ export const getCountryController = async (req: Request, res: Response) => {
     const flag = AllFlags.find(({ iso3 }) => iso3 === alpha3CountryCode);
 
     if (!countryInfo || !population || !flag) {
-      res.json({ status: 400, message: "Country Data not found" });
+      res.status(400).json({ message: "Country Data not found" });
       return;
     }
 
@@ -50,6 +50,7 @@ export const getCountryController = async (req: Request, res: Response) => {
         name: border.commonName,
         code: border.countryCode,
       })),
+      population: population.populationCounts,
     };
 
     res.json(countryData);

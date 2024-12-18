@@ -7,13 +7,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@mantine/charts": "^7.15.1",
     "@mantine/core": "^7.11.2",
     "@mantine/hooks": "^7.15.1",
     "@tabler/icons-react": "^2.47.0",
     "axios": "^1.6.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.21.0"
+    "react-router-dom": "^6.21.0",
+    "recharts": "2"
   },
   "devDependencies": {
     "@types/node": "^20.11.16",

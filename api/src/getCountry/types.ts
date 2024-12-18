@@ -46,4 +46,8 @@ export interface CountryData {
     name: string;
     code: string;
   }[];
+  population: {
+    year: number;
+    value: number;
+  };
 }

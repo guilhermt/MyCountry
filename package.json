@@ -1,0 +1,10 @@
+{
+  "name": "my-country",
+  "version": "1.0.0",
+  "repository": "https://github.com/guilhermt/MyCountry.git",
+  "author": "Guilherme <guilhermemartinsteixeiras@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "bash scripts/start.sh"
+  }
+}
