@@ -17,3 +17,5 @@ You can then access the application in your browser at http://localhost:4173
 
 1. On the initial page, you can select and click on a country, you will be redirected to the country's page.
 2. You will find the country flag, a list of the borders countries (where you can select and navigate to other pages) alongside with a chart showing the historical population of the country.
+
+![image](https://github.com/user-attachments/assets/1dcb765b-a2e9-4d87-8b35-dc3ba808be1a)
